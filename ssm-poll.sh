@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -e
 
+if [[ "$DEBUG" == "1" ]]; then
+  set -x
+fi
+
 # Note: make a file called "ssm-script" with your script
 # This script requires execution priveleges on the  AWS-RunShellScript SSM Command
 
