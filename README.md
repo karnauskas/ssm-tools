@@ -10,7 +10,7 @@ setup for running SSM commands on EMR. Note that it's pretty permissive, using t
 AWS-RunShellScript command, which means the user can execute arbitrary commands.
 We lock down which instances can run this by using tags.
 
-See terraform/example.tf for how to set up the policies for this tool to work.
+See [terraform/example.tf](https://github.com/reverbdotcom/ssm-tools/blob/master/terraform/example.tf) for how to set up the policies for this tool to work.
 We define the iam policy, but attaching that policy to an EC2 instance or IAM user is an exercise left to the reader.
 
 ## ssm-poll
